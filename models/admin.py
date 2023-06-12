@@ -14,9 +14,9 @@ class Admin(Document):
     class Config:
         schema_extra = {
             "example": {
-                "fullname": "Abdulazeez Abdulazeez Adeshina",
-                "email": "abdul@youngest.dev",
-                "password": "3xt3m#"
+                "fullname": "John doe",
+                "email": "john.doe@yopmail.com",
+                "password": "123123@aA",
             }
         }
 
@@ -24,10 +24,7 @@ class Admin(Document):
 class AdminSignIn(HTTPBasicCredentials):
     class Config:
         schema_extra = {
-            "example": {
-                "username": "abdul@youngest.dev",
-                "password": "3xt3m#"
-            }
+            "example": {"username": "john.doe@yopmail.com", "password": "123123@aA"}
         }
 
 
@@ -38,7 +35,7 @@ class AdminData(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "fullname": "Abdulazeez Abdulazeez Adeshina",
-                "email": "abdul@youngest.dev",
+                "fullname": "John Doe",
+                "email": "john.doe@yopmail.com",
             }
         }
